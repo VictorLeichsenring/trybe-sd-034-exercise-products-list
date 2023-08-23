@@ -1,15 +1,17 @@
 import './App.css';
-// import Product from './components/Product'
-// import products from './data';
+import products from './data';
 import ProductsList from './components/ProductsList';
+import Product from './components/Product';
 
 function App() {
   return (
-
     <ProductsList>
-      teste 1
+      {
+        products.map((product) => (
+          <Product key={ product.id } productInfo={ product } />
+        ))
+      }
     </ProductsList>
-
   );
 }
 
