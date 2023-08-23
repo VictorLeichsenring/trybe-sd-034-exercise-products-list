@@ -1,5 +1,5 @@
 type ProductInfoProp = {
-  ProductInfo: {
+  productInfo: {
     id: number,
     title: string,
     description: string,
@@ -12,8 +12,8 @@ type ProductInfoProp = {
     image: string,
   }
 };
-function Product({ ProductInfo }: ProductInfoProp) {
-  const { title, price, image } = ProductInfo;
+function Product({ productInfo }: ProductInfoProp) {
+  const { title, price, image } = productInfo;
   return (
     <li>
       <p>{ title }</p>
