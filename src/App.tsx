@@ -5,9 +5,11 @@ import ProductsList from './components/ProductsList';
 
 function App() {
   return (
-    <>
-      <ProductsList />
-    </>
+
+    <ProductsList>
+      teste 1
+    </ProductsList>
+
   );
 }
 
