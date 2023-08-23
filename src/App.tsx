@@ -1,8 +1,11 @@
 import './App.css';
-
+import Product from './components/Product'
+import products from './data';
 function App() {
   return (
-    <h1>Exercise</h1>
+    <>
+      
+    </>
   );
 }
 
