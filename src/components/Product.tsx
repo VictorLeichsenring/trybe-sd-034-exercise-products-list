@@ -1,5 +1,5 @@
-type productInfoProp = {
-  productInfo: {
+type ProductInfoProp = {
+  ProductInfo: {
     id: number,
     title: string,
     description: string,
@@ -11,14 +11,14 @@ type productInfoProp = {
     category: string,
     image: string,
   }
-}
-function Product({ productInfo }: productInfoProp) {
-  const {title, price, image} = productInfo;
+};
+function Product({ ProductInfo }: ProductInfoProp) {
+  const { title, price, image } = ProductInfo;
   return (
     <li>
-      <p>{title}</p>
-      <p>{price}</p>
-      <img src={image} alt={title} />
+      <p>{ title }</p>
+      <p>{ price }</p>
+      <img src={ image } alt={ title } />
     </li>
   );
 }
